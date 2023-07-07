@@ -8,32 +8,32 @@
     <script src="https://kit.fontawesome.com/8156064e39.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood">
+    <header class="header">
+        <a href="#" class="header__return-link"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood" class="header__logo">
     </header>
     <main>
         <section class="location">
             <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
         </section>
         <section class="presentation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a href="#">Explorer nos restaurants</a>
+            <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+            <p class="presentation__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <a href="#" class="presentation__cta button">Explorer nos restaurants</a>
         </section>
         <section class="tutorial">
             <h1>Fonctionnement</h1>
-            <div><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></div>
-            <div><i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p></div>
-            <div><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
+            <div class="tutorial__step"><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></div>
+            <div class="tutorial__step"><i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p></div>
+            <div class="tutorial__step tutorial__step--primary-icon"><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
         </section>
         <section class="restaurants">
             <h1>Restaurants</h1>
-            <div>
-                <article>
+            <div class="restaurants__cards-container">
+                <article class="card-menu card-menu--new">
                     <a href="#">
-                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image représentant La palette du goût">
-                        <div>
+                        <img class="card-menu__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image représentant La palette du goût">
+                        <div class="card-menu__details-container">
                             <div>
                                 <h2>La palette du goût</h2>
                                 <p>Ménilmontant</p>
@@ -42,10 +42,10 @@
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card-menu card-menu--new">
                     <a href="#">
-                        <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image représentant La note enchantée">
-                        <div>
+                        <img class="card-menu__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image représentant La note enchantée">
+                        <div class="card-menu__details-container">
                             <div>
                                 <h2>La note enchantée</h2>
                                 <p>Charonne</p>
@@ -54,22 +54,22 @@
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card-menu">
                     <a href="#">
-                        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image représentant À la française">
-                        <div>
+                        <img class="card-menu__image" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image représentant À la française">
+                        <div class="card-menu__details-container">
                             <div>
                                 <h2>À la française</h2>
                                 <p>Cité Rouge</p>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart filled-heart"></i>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card-menu">
                     <a href="#">
-                        <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image représentant Le délice des sens">
-                        <div>
+                        <img class="card-menu__image" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image représentant Le délice des sens">
+                        <div class="card-menu__details-container">
                             <div>
                                 <h2>Le délice des sens</h2>
                                 <p>Folie-Méricourt</p>
@@ -81,14 +81,14 @@
             </div>
         </section>
     </main>
-    <footer>
-        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood">
+    <footer class="footer">
+        <span class="footer__title">ohmyfood</span>
         <nav>
-            <ul>
-                <li><a href="#">Proposer un restaurant</a></li>
-                <li><a href="#">Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="footer__nav">
+                <li><a href="#" class="footer__link"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#" class="footer__link"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+                <li><a href="#" class="footer__link">Mentions légales</a></li>
+                <li><a href="#" class="footer__link">Contact</a></li>
             </ul>
         </nav>
     </footer>
