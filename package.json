@@ -1,0 +1,16 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 pour formation OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/assets/sass/main.scss:./src/assets/css/main.css --style expanded",
+    "prefix": "postcss ./src/assets/css/main.css --use autoprefixer -d ./src/assets/css/prefixed/"
+  },
+  "author": "Antonin PIDET",
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^8.4.25"
+  }
+}
