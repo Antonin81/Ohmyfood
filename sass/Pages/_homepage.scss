@@ -1,0 +1,45 @@
+.location {
+    background-color: $color-light-grey;
+    text-align: center;
+    padding: 17px;
+    color: $color-grey;
+    i{
+        margin-right: 17px;
+    }
+}
+
+.header__return-link {
+    display: none;
+}
+
+.presentation {
+    padding: 50px 30px;
+    text-align: center;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 43px;
+        color: $color-grey;
+    }
+}
+
+.tutorial {
+    background-color: $color-white;
+    padding: 50px 20px;
+    counter-reset: compteur;
+}
+
+h1 {
+    margin-bottom: 26px;
+}
+
+.restaurants {
+    padding: 60px 20px ;
+
+    &__cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}

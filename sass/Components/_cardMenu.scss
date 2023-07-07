@@ -1,0 +1,47 @@
+.card-menu {
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    &__image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    &__details-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px 15px 15px;
+        color: $color-black;
+
+        h2 {
+            font-size: 18px;
+            line-height: 21.09px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        i {
+            font-size: 21px;
+        }
+    }
+    &--new {
+        &::before {
+            content: 'Nouveau';
+            background-color: $color-green;
+            color: $color-green-font;
+            padding: 7px 9px;
+            border-radius: 2px;
+            position: absolute;
+            top:10px;
+            right: 10px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

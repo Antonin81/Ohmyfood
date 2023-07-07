@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+.footer {
+    background-color: $color-grey;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__title {
+        color: white;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        font-family: 'Shrikhand', sans-serif;
+    }
+    &__link {
+        color: white;
+        i{
+            font-size: 13px;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 0;
+    }
+}
