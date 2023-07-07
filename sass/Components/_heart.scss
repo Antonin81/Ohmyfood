@@ -1,0 +1,25 @@
+.filled-heart {
+    background: -webkit-linear-gradient(#9356dc, #FF79DA);
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+    visibility: collapse;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.empty-heart {
+    visibility: visible;
+    &:hover{
+        visibility: collapse;
+        + .filled-heart{
+            visibility: visible;
+        }
+    }
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card-menu__heart-container {
+    position: relative;
+}
