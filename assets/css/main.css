@@ -254,13 +254,15 @@ h1 {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: #99E2D0;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: visible;
+  animation: disappear 1s 3s forwards;
 }
 .loader__container {
   position: relative;
@@ -389,6 +391,33 @@ h1 {
   }
   100% {
     transform: translate(50%, 48%);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+.page-container {
+  animation: appear 1s 3s forwards;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    height: initial;
+    overflow: initial;
+  }
+  100% {
+    opacity: 1;
+    height: initial;
+    overflow: initial;
   }
 }
 
