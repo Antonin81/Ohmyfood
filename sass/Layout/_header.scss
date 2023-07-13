@@ -20,7 +20,10 @@
         align-items: center;
     }
 
-    &__logo {
-        width: 162px;
+    &__title {
+        font-size: 30px;
+        line-height: 44px;
+        font-weight: 400;
+        font-family: 'Shrikhand', sans-serif;
     }
 }

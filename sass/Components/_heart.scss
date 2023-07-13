@@ -3,23 +3,26 @@
     -webkit-background-clip: text;
     color:transparent;
     -webkit-text-fill-color: transparent;
-    visibility: collapse;
+    opacity: 0;
     position: absolute;
     transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
 }
 
 .empty-heart {
-    visibility: visible;
-    &:hover{
-        visibility: collapse;
-        + .filled-heart{
-            visibility: visible;
-        }
-    }
     position: absolute;
     transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
 }
 
 .card-menu__heart-container {
     position: relative;
+    &:hover{
+        .empty-heart {
+            opacity: 0;
+        }
+        .filled-heart {
+            opacity: 1;
+        }
+    }
 }

@@ -37,8 +37,11 @@ body {
   display: flex;
   align-items: center;
 }
-.header__logo {
-  width: 162px;
+.header__title {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .footer {
@@ -121,6 +124,7 @@ h1 {
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   position: relative;
+  transition: box-shadow 1s;
 }
 .button::before {
   content: "";
@@ -132,6 +136,7 @@ h1 {
   top: 0;
   left: 0;
   border-radius: 25px;
+  transition: opacity 1s;
 }
 .button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
@@ -226,25 +231,165 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  visibility: collapse;
+  opacity: 0;
   position: absolute;
   transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
 }
 
 .empty-heart {
-  visibility: visible;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-.empty-heart:hover {
-  visibility: collapse;
-}
-.empty-heart:hover + .filled-heart {
-  visibility: visible;
+  transition: opacity 0.2s;
 }
 
 .card-menu__heart-container {
   position: relative;
+}
+.card-menu__heart-container:hover .empty-heart {
+  opacity: 0;
+}
+.card-menu__heart-container:hover .filled-heart {
+  opacity: 1;
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  background-color: #99E2D0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader__container {
+  position: relative;
+  width: 112px;
+  aspect-ratio: 1;
+  animation: loader-turn 1.5s 2 cubic-bezier(0.45, 0.61, 0.63, 0.72);
+}
+.loader__container > * {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+.loader__circle {
+  border: 10px solid white;
+  border-radius: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: #99E2D0;
+  animation: dots-turn 3s ease-in-out;
+}
+.loader__dot {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+}
+.loader__dot--one {
+  height: 30px;
+  background-color: white;
+  left: 50%;
+  top: 18px;
+  transform: translate(-50%, -50%);
+  animation: dot-one-move 0.4s infinite;
+}
+.loader__dot--two {
+  height: 40px;
+  background-color: #008766;
+  left: 27px;
+  bottom: 35px;
+  transform: translate(-50%, 50%);
+  animation: dot-two-move 0.35s infinite;
+}
+.loader__dot--three {
+  height: 35px;
+  background-color: #FF79DA;
+  right: 24px;
+  bottom: 40px;
+  transform: translate(50%, 50%);
+  animation: dot-three-move 0.38s infinite;
+}
+.loader__handle {
+  background-color: white;
+  height: 60%;
+  width: 15%;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 0 0 50px 50px;
+}
+.loader__handle > * {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.loader__handle__hole {
+  height: 20%;
+  width: 40%;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes loader-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dots-turn {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
+  }
+  50% {
+    transform: rotate(-180deg);
+    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes dot-one-move {
+  0% {
+    transform: translate(-47.5%, -50%);
+  }
+  50% {
+    transform: translate(-52.5%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -47.5%);
+  }
+}
+@keyframes dot-two-move {
+  0% {
+    transform: translate(-48.5%, 50%);
+  }
+  50% {
+    transform: translate(-51.5%, 50%);
+  }
+  100% {
+    transform: translate(-50%, 48.5%);
+  }
+}
+@keyframes dot-three-move {
+  0% {
+    transform: translate(48%, 50%);
+  }
+  50% {
+    transform: translate(52%, 50%);
+  }
+  100% {
+    transform: translate(50%, 48%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
