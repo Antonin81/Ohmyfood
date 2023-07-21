@@ -1,0 +1,58 @@
+.choice{
+    background-color: $color-white;
+    border-radius: 15px;
+    padding: 12px 15px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    overflow: hidden;
+    position: relative;
+    &__title{
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        font-weight: 300;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__price{
+        font-weight: 700;
+    }
+    &__check{
+        background-color: $color-green;
+        font-size: 20px;
+        width: 60px;
+        height: 100px;
+        top: 50%;
+        right: 0px;
+        transform: translate(100%, -50%);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        transition: transform 0.2s linear;
+    }
+    &__content{
+        width: 100%;
+        transition: width 0.2s linear;
+    }
+    
+    &:hover{
+        .choice{
+            &__content{
+                width: calc(100% - 60px);
+            }
+            &__check{
+                transform: translate(0, -50%);
+            }
+        }
+        
+    }
+}

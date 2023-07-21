@@ -16,8 +16,11 @@
         line-height: 0;
         width: 30px;
         height: 30px;
-        display: flex;
         align-items: center;
+        display: none;
+        &--visible{
+            display: flex;
+        }
     }
 
     &__title {
