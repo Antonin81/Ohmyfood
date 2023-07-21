@@ -4,6 +4,13 @@
     overflow: hidden;
 }
 
+.container {
+    >*{
+        max-width: 1080px;
+        margin-inline: auto;
+    }
+}
+
 @keyframes appear {
     0%{
         opacity: 0;
