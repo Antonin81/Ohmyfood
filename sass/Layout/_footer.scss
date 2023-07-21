@@ -7,11 +7,13 @@
     flex-direction: column;
     gap: 16px;
     min-height: 114px;
+
     @media screen and (min-width:1080px) {
         flex-direction: row-reverse;
         gap: 5%;
         align-items: end;
-        >nav{
+
+        >nav {
             width: 670px;
         }
     }
@@ -23,26 +25,32 @@
         font-weight: 400;
         font-family: 'Shrikhand', sans-serif;
     }
+
     &__link {
         color: white;
         font-weight: 500;
-        i{
+
+        i {
             font-size: 13px;
         }
-        &--thin{
+
+        &--thin {
             font-weight: 400;
         }
     }
+
     &__nav {
         display: flex;
         flex-direction: column;
         gap: 6px;
         padding-left: 0;
+
         @media screen and (min-width:1080px) {
             flex-direction: row;
             gap: 2%;
             white-space: nowrap;
-            &>li:nth-child(2){
+
+            &>li:nth-child(2) {
                 margin-right: 30px;
             }
         }

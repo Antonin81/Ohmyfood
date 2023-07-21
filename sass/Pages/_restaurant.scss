@@ -1,19 +1,20 @@
-.main-restaurant{
+.main-restaurant {
     background-color: $color-white;
 }
 
-.restaurant-presentation{
-    &__banner{
+.restaurant-presentation {
+    &__banner {
         height: 275px;
         object-fit: cover;
         width: 100%;
+
         @media screen and (min-width:1080px) {
             height: 383px;
         }
     }
 }
 
-.menus{
+.menus {
     background-color: $color-background;
     border-radius: 40px 40px 0px 0px;
     margin-top: -41px;
@@ -22,21 +23,25 @@
     max-width: 1055px;
     margin-inline: auto;
     position: relative;
-    &__title-section{
+
+    &__title-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
+
         @media screen and (min-width:1080px) {
             justify-content: center;
         }
     }
-    &__title{
+
+    &__title {
         margin: 0 25px 0 0;
-        font-family: 'Shrikhand', sans-serif;    
+        font-family: 'Shrikhand', sans-serif;
         font-size: 28px;
     }
-    &__section{
+
+    &__section {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -45,13 +50,14 @@
     }
 }
 
-.menu-section{
-    &__title{
+.menu-section {
+    &__title {
         font-weight: 300;
         font-size: 16px;
         position: relative;
         margin-bottom: 12px;
-        &::after{
+
+        &::after {
             content: '';
             display: block;
             width: 40px;
@@ -60,23 +66,27 @@
             margin-top: 6px;
         }
     }
-    &__choices{
+
+    &__choices {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
+
     @media screen and (min-width:1080px) {
         margin-inline: auto;
         width: 634px;
     }
+
     animation: choiceAppears 1s calc(var(--num-appears) * 0.2s) backwards;
 }
 
 @keyframes choiceAppears {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }

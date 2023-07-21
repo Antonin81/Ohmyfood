@@ -1,7 +1,7 @@
 .filled-heart {
     background: -webkit-linear-gradient(#9356dc, #FF79DA);
     -webkit-background-clip: text;
-    color:transparent;
+    color: transparent;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     position: absolute;
@@ -23,13 +23,16 @@
     position: relative;
     height: 21px;
     aspect-ratio: 1;
-    >*{
+
+    >* {
         font-size: 21px;
     }
-    &:hover{
+
+    &:hover {
         .empty-heart {
             opacity: 0;
         }
+
         .filled-heart {
             opacity: 1;
         }

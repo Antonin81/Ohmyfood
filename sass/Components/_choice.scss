@@ -1,4 +1,4 @@
-.choice{
+.choice {
     background-color: $color-white;
     border-radius: 15px;
     padding: 12px 15px;
@@ -6,26 +6,31 @@
     overflow: hidden;
     position: relative;
     animation: choiceAppears 1s calc(var(--num-appears) * 0.2s) backwards;
-    &__title{
+
+    &__title {
         font-weight: 500;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    &__description{
+
+    &__description {
         display: flex;
         justify-content: space-between;
     }
-    &__text{
+
+    &__text {
         font-weight: 300;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    &__price{
+
+    &__price {
         font-weight: 700;
     }
-    &__check{
+
+    &__check {
         background-color: $color-green;
         font-size: 20px;
         width: 60px;
@@ -40,20 +45,22 @@
         color: $color-white;
         transition: transform 0.2s linear;
     }
-    &__content{
+
+    &__content {
         width: 100%;
         transition: width 0.2s linear;
     }
-    
-    &:hover{
-        .choice{
-            &__content{
+
+    &:hover {
+        .choice {
+            &__content {
                 width: calc(100% - 60px);
             }
-            &__check{
+
+            &__check {
                 transform: translate(0, -50%);
             }
         }
-        
+
     }
 }
