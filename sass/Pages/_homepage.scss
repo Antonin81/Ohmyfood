@@ -24,6 +24,13 @@
     }
 }
 
+.tutorial__steps{
+    width: 100%;
+    @media screen and (min-width:1440px) {
+        display: flex;
+    }
+}
+
 .tutorial {
     background-color: $color-white;
     padding: 50px 20px;
