@@ -97,6 +97,15 @@ body {
   color: #353535;
 }
 
+.tutorial__steps {
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__steps {
+    display: flex;
+  }
+}
+
 .tutorial {
   background-color: white;
   padding: 50px 20px;
@@ -181,6 +190,11 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__step {
+    width: 33%;
+  }
 }
 
 .card-menu {
