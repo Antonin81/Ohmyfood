@@ -149,6 +149,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  align-items: center;
 }
 @media screen and (min-width: 1080px) {
   .restaurants__cards-container {
@@ -239,6 +240,7 @@ h1 {
   overflow: hidden;
   border-radius: 15px;
   position: relative;
+  max-width: 600px;
 }
 @media screen and (min-width: 1080px) {
   .card-menu {
