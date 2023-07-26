@@ -307,7 +307,7 @@ h1 {
 .card-menu__heart-container {
   position: relative;
   height: 21px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .card-menu__heart-container > * {
   font-size: 21px;
@@ -333,7 +333,7 @@ h1 {
 .loader__container {
   position: relative;
   width: 112px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   animation: loader-turn 1.5s 2 cubic-bezier(0.45, 0.61, 0.63, 0.72);
 }
 .loader__container > * {
@@ -350,7 +350,7 @@ h1 {
 }
 .loader__dot {
   position: absolute;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 100%;
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
 }
