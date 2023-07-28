@@ -1,0 +1,111 @@
+
+@keyframes loader-turn {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes dots-turn {
+
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(.45, .61, .63, .72);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+        animation-timing-function: cubic-bezier(.45, .61, .63, .72);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+@keyframes dot-one-move {
+
+    0% {
+        transform: translate(-47.5%, -50%);
+    }
+
+    50% {
+        transform: translate(-52.5%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -47.5%);
+    }
+
+}
+
+@keyframes dot-two-move {
+
+    0% {
+        transform: translate(-48.5%, 50%);
+    }
+
+    50% {
+        transform: translate(-51.5%, 50%);
+    }
+
+    100% {
+        transform: translate(-50%, 48.5%);
+    }
+
+}
+
+@keyframes dot-three-move {
+
+    0% {
+        transform: translate(48%, 50%);
+    }
+
+    50% {
+        transform: translate(52%, 50%);
+    }
+
+    100% {
+        transform: translate(50%, 48%);
+    }
+
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: collapse;
+    }
+}
+
+@keyframes appear {
+    0% {
+        height: initial;
+        overflow: initial;
+    }
+
+    100% {
+        height: initial;
+        overflow: initial;
+    }
+}
+
+@keyframes choiceAppears {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

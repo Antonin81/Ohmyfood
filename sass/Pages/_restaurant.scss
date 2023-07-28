@@ -81,12 +81,3 @@
     animation: choiceAppears 1s calc(var(--num-appears) * 0.2s) backwards;
 }
 
-@keyframes choiceAppears {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}

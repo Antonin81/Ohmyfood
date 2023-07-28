@@ -1,7 +1,5 @@
 <h1>Ohmyfood</h1>
-<h2>prochaines missions :</h2>
-<ul>
-</ul><br>
+<br>
 <h2>Site internet :</h2>
 <a href="https://antonin81.github.io/Ohmyfood/">https://antonin81.github.io/Ohmyfood/</a>
 

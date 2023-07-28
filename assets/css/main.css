@@ -1,5 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes loader-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dots-turn {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
+  }
+  50% {
+    transform: rotate(-180deg);
+    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes dot-one-move {
+  0% {
+    transform: translate(-47.5%, -50%);
+  }
+  50% {
+    transform: translate(-52.5%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -47.5%);
+  }
+}
+@keyframes dot-two-move {
+  0% {
+    transform: translate(-48.5%, 50%);
+  }
+  50% {
+    transform: translate(-51.5%, 50%);
+  }
+  100% {
+    transform: translate(-50%, 48.5%);
+  }
+}
+@keyframes dot-three-move {
+  0% {
+    transform: translate(48%, 50%);
+  }
+  50% {
+    transform: translate(52%, 50%);
+  }
+  100% {
+    transform: translate(50%, 48%);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+@keyframes appear {
+  0% {
+    height: initial;
+    overflow: initial;
+  }
+  100% {
+    height: initial;
+    overflow: initial;
+  }
+}
+@keyframes choiceAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -406,69 +487,6 @@ h1 {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes loader-turn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes dots-turn {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
-  }
-  50% {
-    transform: rotate(-180deg);
-    animation-timing-function: cubic-bezier(0.45, 0.61, 0.63, 0.72);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes dot-one-move {
-  0% {
-    transform: translate(-47.5%, -50%);
-  }
-  50% {
-    transform: translate(-52.5%, -50%);
-  }
-  100% {
-    transform: translate(-50%, -47.5%);
-  }
-}
-@keyframes dot-two-move {
-  0% {
-    transform: translate(-48.5%, 50%);
-  }
-  50% {
-    transform: translate(-51.5%, 50%);
-  }
-  100% {
-    transform: translate(-50%, 48.5%);
-  }
-}
-@keyframes dot-three-move {
-  0% {
-    transform: translate(48%, 50%);
-  }
-  50% {
-    transform: translate(52%, 50%);
-  }
-  100% {
-    transform: translate(50%, 48%);
-  }
-}
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: collapse;
-  }
-}
 .page-container {
   animation: appear 1s 3s forwards;
   height: 100vh;
@@ -480,16 +498,6 @@ h1 {
   margin-inline: auto;
 }
 
-@keyframes appear {
-  0% {
-    height: initial;
-    overflow: initial;
-  }
-  100% {
-    height: initial;
-    overflow: initial;
-  }
-}
 .main-restaurant {
   background-color: white;
 }
@@ -568,14 +576,6 @@ h1 {
   }
 }
 
-@keyframes choiceAppears {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .choice {
   background-color: white;
   border-radius: 15px;
