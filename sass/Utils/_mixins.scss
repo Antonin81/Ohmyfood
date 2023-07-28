@@ -1,0 +1,3 @@
+@mixin appears($rank){
+    animation: choiceAppears 1s calc($rank * 0.2s) backwards;
+}
