@@ -475,7 +475,7 @@ h1 {
   width: 100%;
   height: 100%;
 }
-.loader__handle__hole {
+.loader__handle-hole {
   height: 20%;
   width: 40%;
   background-color: #99E2D0;
@@ -547,9 +547,6 @@ h1 {
   text-align: initial;
 }
 
-.menu-section {
-  animation: choiceAppears 1s calc(var(--num-appears) * 0.2s) backwards;
-}
 .menu-section__title {
   font-weight: 300;
   font-size: 16px;
